@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for ((i = 0 ; i <= 199 ; i++)); do
+  timidity "Lookback_$i.mid" -Ow -o "Lookback_$i.wav"
+done
+mv *.wav ../WAV
